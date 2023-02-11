@@ -1,0 +1,19 @@
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+img{
+  width: 220px;
+  height: 280px;
+  object-fit: none;
+  border: 2px solid black;
+}
+
+img[alt="rock"]{
+  object-position: -150px -120px;
+  
+}
+img[alt="scissors"]{
+  object-position: -630px -110px;
+
+}
