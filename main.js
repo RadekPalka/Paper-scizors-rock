@@ -2,7 +2,7 @@ const images = document.querySelectorAll(".container>img")
 const computerChoiceImage = document.querySelector(".computer-choice>img")
 const resultParagraph = document.querySelector(".result>p")
 const winsSpan = document.querySelector(".wins>span")
-const losesSpan = document.querySelector(".loses>span")
+const loosesSpan = document.querySelector(".loses>span")
 const drawsSpan = document.querySelector(".draws>span")
 const btn = document.querySelector("button")
 
@@ -12,8 +12,8 @@ const fightWithRock = computerChoice =>{
     drawsSpan.textContent= +drawsSpan.textContent +1
   }
   else if (computerChoice === "paper"){
-    resultParagraph.textContent = "You lose"
-    losesSpan.textContent= +losesSpan.textContent +1
+    resultParagraph.textContent = "You loose"
+    loosesSpan.textContent= +loosesSpan.textContent +1
   }
   else if (computerChoice === "scissors"){
     resultParagraph.textContent = "You win"
@@ -30,14 +30,14 @@ const fightWithPaper = computerChoice =>{
     drawsSpan.textContent= +drawsSpan.textContent +1
   }
   else if (computerChoice === "scissors"){
-    resultParagraph.textContent = "You lose"
-    losesSpan.textContent= +losesSpan.textContent +1
+    resultParagraph.textContent = "You loose"
+    loosesSpan.textContent= +loosesSpan.textContent +1
   }
 }
 const fightWithScissors = computerChoice =>{
   if (computerChoice === "rock"){
-    resultParagraph.textContent = "You lose"
-    losesSpan.textContent= +losesSpan.textContent +1
+    resultParagraph.textContent = "You loose"
+    loosesSpan.textContent= +loosesSpan.textContent +1
   }
   else if (computerChoice === "paper"){
     resultParagraph.textContent = "You win"
