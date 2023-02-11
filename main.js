@@ -101,7 +101,7 @@ const addClickListeners = ()=>{
 }
 addClickListeners()
 const playAgain = () =>{
-  messageParagraph = ""
+  messageParagraph.textContent = ""
   addClickListeners()
   computerChoiceImage.style.display= "none"
   computerChoiceImage.classList.remove("rock")
