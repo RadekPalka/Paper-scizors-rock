@@ -2,7 +2,7 @@ const images = document.querySelectorAll(".container>img")
 const computerChoiceImage = document.querySelector(".computer-choice>img")
 const resultParagraph = document.querySelector(".result>p")
 const winsSpan = document.querySelector(".wins>span")
-const loosesSpan = document.querySelector(".loses>span")
+const loosesSpan = document.querySelector(".looses>span")
 const drawsSpan = document.querySelector(".draws>span")
 const btn = document.querySelector("button")
 
