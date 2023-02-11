@@ -40,3 +40,8 @@ p{
 .computer-choice>img{
   display: none;
 }
+button{
+  display: none;
+  
+  margin: 10px auto;
+}

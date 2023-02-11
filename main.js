@@ -4,6 +4,7 @@ const resultParagraph = document.querySelector(".result>p")
 const winsSpan = document.querySelector(".wins>span")
 const losesSpan = document.querySelector(".loses>span")
 const drawsSpan = document.querySelector(".draws>span")
+const btn = document.querySelector("button")
 
 const fightWithRock = computerChoice =>{
   if (computerChoice === "rock"){
@@ -73,6 +74,7 @@ const removeHover = () =>{
 
   for (const image of images){
     image.classList.remove("user-images")
+    image.removeEventListener("click", getChoice)
     
   }
 }
@@ -84,9 +86,25 @@ const getChoice = e =>{
   removeHover()
   const computerChoice= draw()
   showResult(userChoice,computerChoice)
+  btn.style.display= "block"
 }
+const addClickListeners = ()=>{
+  for (const image of images){
+    image.classList.remove("clicked")
+    image.classList.add("user-images")
+    image.addEventListener("click", getChoice)
+  }
 
-for (const image of images){
-  image.classList.add("user-images")
-  image.addEventListener("click", getChoice)
 }
+addClickListeners()
+const playAgain = () =>{
+  addClickListeners()
+  computerChoiceImage.style.display= "none"
+  computerChoiceImage.classList.remove("rock")
+  computerChoiceImage.classList.remove("paper")
+  computerChoiceImage.classList.remove("scissors")
+  resultParagraph.textContent = ""
+  btn.style.display= "none"
+
+}
+btn.addEventListener("click", playAgain)
