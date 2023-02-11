@@ -83,7 +83,6 @@ const removeHover = () =>{
 }
 
 const getChoice = e =>{
-  messageParagraph.textContent= ""
   const element = e.target
   const userChoice= element.getAttribute('alt')
   element.classList.add("clicked")
@@ -102,6 +101,7 @@ const addClickListeners = ()=>{
 }
 addClickListeners()
 const playAgain = () =>{
+  messageParagraph = ""
   addClickListeners()
   computerChoiceImage.style.display= "none"
   computerChoiceImage.classList.remove("rock")
