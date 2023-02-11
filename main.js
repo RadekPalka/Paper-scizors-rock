@@ -5,6 +5,7 @@ const winsSpan = document.querySelector(".wins>span")
 const loosesSpan = document.querySelector(".looses>span")
 const drawsSpan = document.querySelector(".draws>span")
 const btn = document.querySelector("button")
+const messageParagraph = document.querySelector("p.message")
 
 const fightWithRock = computerChoice =>{
   if (computerChoice === "rock"){
@@ -62,6 +63,7 @@ const showResult= (userChoice, computerChoice) =>{
 }
 
 const draw = () =>{
+  messageParagraph.textContent= "Computer choose"
   const choices = ["rock", "paper", "scissors"]
   const index = Math.floor(Math.random()*3)
   const computerChoice = choices[index]

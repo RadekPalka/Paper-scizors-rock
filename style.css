@@ -4,6 +4,7 @@
 .container, .computer-choice{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin: 20px 0;
 }
 img{
@@ -11,6 +12,7 @@ img{
   height: 290px;
   object-fit: none;
   border: 2px solid black;
+  margin-bottom: 5px;
 }
 .user-images:hover{
   cursor: pointer;
