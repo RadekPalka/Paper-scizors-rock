@@ -83,6 +83,7 @@ const removeHover = () =>{
 }
 
 const getChoice = e =>{
+  messageParagraph.textContent= ""
   const element = e.target
   const userChoice= element.getAttribute('alt')
   element.classList.add("clicked")
