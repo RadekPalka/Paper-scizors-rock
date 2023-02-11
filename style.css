@@ -1,9 +1,10 @@
 *{
   box-sizing: border-box;
 }
-.container{
+.container, .computer-choice{
   display: flex;
   justify-content: space-around;
+  margin: 20px 0;
 }
 img{
   width: 220px;
@@ -11,7 +12,7 @@ img{
   object-fit: none;
   border: 2px solid black;
 }
-img:hover{
+.user-images:hover{
   cursor: pointer;
   border: 5px solid grey;
 }
@@ -27,7 +28,12 @@ img:hover{
   object-position: -630px -110px;
 
 }
-.clicked{
+img.clicked{
   border: 5px solid red;
   
+}
+p{
+  text-align: center;
+  font-size: 32px;
+  margin: 5px 0;
 }
