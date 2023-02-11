@@ -67,6 +67,7 @@ const draw = () =>{
   const computerChoice = choices[index]
   computerChoiceImage.style.display = "block"
   computerChoiceImage.classList.add(computerChoice)
+  computerChoiceImage.setAttribute("alt", computerChoice)
   return computerChoice
 }
 
