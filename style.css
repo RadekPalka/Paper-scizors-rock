@@ -37,3 +37,6 @@ p{
   font-size: 32px;
   margin: 5px 0;
 }
+.computer-choice>img{
+  display: none;
+}
