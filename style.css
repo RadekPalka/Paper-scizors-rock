@@ -16,14 +16,14 @@ img:hover{
   border: 5px solid grey;
 }
 
-img[alt="rock"]{
+.rock{
   object-position: -150px -120px;
   
 }
-img[alt="paper"]{
+.paper{
   object-position: -390px -110px;
 }
-img[alt="scissors"]{
+.scissors{
   object-position: -630px -110px;
 
 }
